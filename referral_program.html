@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qia 紹介制度</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            background: #e0e0e0;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .share-link {
+            background: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-align: center;
+            display: inline-block;
+            margin: 20px 0;
+            text-decoration: none;
+        }
+
+        .share-link:hover {
+            background: #0056b3;
+        }
+    </style>
+    <script>
+        function copyReferralLink() {
+            const referralLink = 'https://qiainc.github.io/intern_jobs/'; // 固定の紹介リンク
+            navigator.clipboard.writeText(referralLink).then(function () {
+                alert('紹介リンクがクリップボードにコピーされました: ' + referralLink);
+            }, function (err) {
+                alert('リンクのコピーに失敗しました: ' + err);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>qiaインターン紹介制度</h1>
+        <h2>ぜひ知人を紹介してください！</h2>
+        <section>
+            <h3>制度の詳細</h3>
+            <p>株式会社qiaのインターン紹介制度では、応募ごとに紹介者に1,000円、採用されると紹介者と応募者にそれぞれ10,000円をプレゼントします！</p>
+            <ul>
+                <li>応募ごとに紹介者に1,000円をプレゼント</li>
+                <li>採用されると紹介者と応募者にそれぞれ10,000円をプレゼント</li>
+            </ul>
+        </section>
+        <section>
+            <h3>紹介の流れ</h3>
+            <ul>
+                <li>紹介リンクを友人や知人に共有します</li>
+                <li>紹介リンクを通じて応募が行われます</li>
+                <li>応募が完了すると紹介者に1,000円が付与されます</li>
+                <li>採用されると紹介者と応募者にそれぞれ10,000円が付与されます</li>
+            </ul>
+        </section>
+        <div class="share-link" onclick="copyReferralLink()">紹介リンクコピーする</div>
+
+        <div class="footer">
+            <p>詳細については、担当者にお問い合わせください。</p>
+        </div>
+    </div>
+</body>
+
+</html>
